@@ -1,0 +1,12 @@
+Options -Multiviews
+#Kode ini untuk menghindari ambigu ketika kita memanggil file / folder pada aplikasi kita
+
+RewriteEngine On
+# Untuk mulai menjalankan proses Rewrite-nya
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# - d untuk directory dan f untuk file, kode ini mengartikan bahwa untuk mengabaikan apabila ada nama file atau folder yang sama dengan controller dan method kita nantinya.
+
+RewriteRule ^(.*)$ index.php?url=$1  [L]
+#Nah disini bagian penting dari rewrite url kita. Kode ^(.*)$ itu berarti ambil semua string setelah public/ lalu simpan isinya kedalam $1 dan untuk[L] itu berarti apabila ada rule yang sudah terjalankan maka jangan jalankan rule lain, hal ini yang membuat kita mengantisipasi dari orang — orang yang akan melalukan sesuatu yang jahat pada web kita

@@ -1,0 +1,40 @@
+1. Pedahuluan
+MVC (Model View Controller) 
+=> Pola arsitektur pada perancangan perangkat lunak berorientasi objek 
+tujuan => Memisahkan antara Tampilan, Data dan Proses
+
+Kenapa MVC?
+1. Organisasi dan struktur kode
+2. Pemisahan logic dan tampilan
+3. Mudah dalam perawatan kode
+4. Implementasi konsep oop yang sudah di pelajari
+5. Digunakan oleh banyak web Application Framework
+
+MVC
+1. Model
+- Representasi Pengetahuan 
+- Mengelolah Data
+- Logika Bisnis
+
+2. Controller
+- Perantara antara model dan view
+- menangani pemrosesan pada aplikasi
+- menangani aksi dan user
+
+3. View
+- Ouput apa yang dilihat user
+- Representasi visual dari model
+- Lapisan Presentasi
+
+2. Persiapan
+1. Folder Public
+-> file2 yang bisa di akses oleh user (index.php, css, js, img).
+2. Folder App
+-> Menyimpan file2 utama di MVC (Model, View, Controller)
+
+3. Routing
+- App.php (Routing url menjadi lebih rapi dan menjadi elemen2 array)
+- htaccess 
+(Options -Indexs) => jika user ada yang buka folder didalamnya selama di dalam folder tidak ada file index maka jangan tampilkan isi foldernya / blok akses user.
+(Options -Multiviews) => utk menghidari kesalahan atau ambigu ketika memanggil folder / file di dalam folder.
+

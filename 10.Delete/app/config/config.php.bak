@@ -1,0 +1,9 @@
+<?php
+// untuk menyimpan link constant yang kita butuhkan untuk folder public
+define('BASEURL', 'http://localhost/11.%20php%20unpas/3.%20MVC/10.Delete/public');
+
+// Database
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'phpmvc');
